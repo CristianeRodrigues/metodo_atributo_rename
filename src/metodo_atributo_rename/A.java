@@ -20,6 +20,7 @@ public class A {
    public void dependencia(){
        int codigo = ClassB.getCodigoB();
        ClassB.codigoB = 200;
+       ClassB.dependenciaB();
    }
     public void setCodigoA(float codigoA) {
         this.codigoA = codigoA;
