@@ -9,7 +9,7 @@ package metodo_atributo_rename;
  *
  * @author Cristiane
  */
-public class B {
+public class Beta {
     float codigoB;
     A ClassA;
     
@@ -24,5 +24,6 @@ public class B {
     
     public void dependenciaB(){
         this.codigoB = ClassA.codigoA;
+        System.out.println ("dependenciaB");
     }
 }
