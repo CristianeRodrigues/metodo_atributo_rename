@@ -10,20 +10,25 @@ package metodo_atributo_rename;
  * @author Cristiane
  */
 public class Beta {
+
     float codigoB;
     A ClassA;
-    
-   public float getCodigoB() {
-       System.out.println("codigo B");
+
+    public float getCodigoB() {
+        System.out.println("codigo B");
         return this.codigoB;
     }
 
     public void setCodigoB(float codigoB) {
         this.codigoB = codigoB;
-    }  
-    
-    public void dependenciaB(){
+    }
+
+    public void dependenciaB() {
         this.codigoB = ClassA.codigoA;
-        System.out.println ("dependenciaB");
+        System.out.println("dependenciaB");
+    }
+
+    public void outradependenciaB() {
+        System.out.println("outra dependenciaB");
     }
 }
